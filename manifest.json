@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "Stack Overflow Code Select",
+    "version": "0.1",
+    "content_scripts": [
+        {
+          "matches": [
+            "*://*.stackoverflow.com/*"
+          ],
+          "js": ["jquery-3.5.0.min.js", "content.js"]
+        }
+      ]
+}
