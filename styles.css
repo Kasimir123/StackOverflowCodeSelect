@@ -1,0 +1,16 @@
+#copyButton {
+    background-color: transparent;
+    color: black;
+    vertical-align: top;
+    border: none;
+    margin-top: 30px;
+}
+
+#copyButton .typ {
+    color: black;
+}
+
+#copyButton .pln {
+    color: black;
+}
+

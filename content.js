@@ -12,10 +12,12 @@ chrome.storage.sync.get(["minVal"], function(items) {
         var button = document.createElement("button");
         // adds the text to the button
         button.innerHTML = buttonText;
+        // Adds id for custom css to button
+        button.id = "copyButton";
         // Checks if the value is a number and if the content is longer than the min length
         if (!isNaN(items["minVal"]) && codes[i].textContent.length >= parseInt(items["minVal"])) {
             // Adds the button to the code block
-            codes[i].appendChild(button);
+            codes[i].append(button);
         }
         // Adds the event listener to the button
         button.addEventListener('click', function() {
